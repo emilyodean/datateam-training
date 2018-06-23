@@ -1,0 +1,2124 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>datateam-training.utf8.md</title>
+  <meta name="description" content="">
+  <meta name="generator" content="bookdown 0.7.13 and GitBook 2.6.7">
+
+  <meta property="og:title" content="datateam-training.utf8.md" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="datateam-training.utf8.md" />
+  
+  
+  
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="use-stats.html">
+<link rel="next" href="more-resources.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+<script src="libs/htmlwidgets-1.2/htmlwidgets.js"></script>
+<link href="libs/jsoneditor-5.5.5/jsoneditor.min.css" rel="stylesheet" />
+<script src="libs/jsoneditor-5.5.5/jsoneditor.min.js"></script>
+<script src="libs/jsonedit-binding-2.0.0/jsonedit.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+
+
+<style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; position: absolute; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; }
+pre.numberSource a.sourceLine:empty
+  { position: absolute; }
+pre.numberSource a.sourceLine::before
+  { content: attr(data-line-number);
+    position: absolute; left: -5em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="../styles.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Data Team Reference</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Datateam miscellaneous</a><ul>
+<li class="chapter" data-level="" data-path="final-checklist-before-notifying-submitter-pi.html"><a href="final-checklist-before-notifying-submitter-pi.html"><i class="fa fa-check"></i>Final checklist before notifying submitter (PI)</a></li>
+<li class="chapter" data-level="" data-path="cyberduck-instructions.html"><a href="cyberduck-instructions.html"><i class="fa fa-check"></i>Cyberduck instructions</a></li>
+<li class="chapter" data-level="" data-path="project-specific-steps.html"><a href="project-specific-steps.html"><i class="fa fa-check"></i>Project-specific steps</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="edit-data-packages.html"><a href="edit-data-packages.html"><i class="fa fa-check"></i>Edit data packages</a><ul>
+<li class="chapter" data-level="" data-path="add-a-pre-generated-identifier-to-the-eml.html"><a href="add-a-pre-generated-identifier-to-the-eml.html"><i class="fa fa-check"></i>Add a pre-generated identifier to the EML</a></li>
+<li class="chapter" data-level="" data-path="create-a-resource-map.html"><a href="create-a-resource-map.html"><i class="fa fa-check"></i>Create a resource map</a></li>
+<li class="chapter" data-level="" data-path="edit-sysmeta.html"><a href="edit-sysmeta.html"><i class="fa fa-check"></i>Edit sysmeta</a><ul>
+<li class="chapter" data-level="" data-path="edit-sysmeta.html"><a href="edit-sysmeta.html#identifiers-and-sysmeta"><i class="fa fa-check"></i>Identifiers and sysmeta</a></li>
+<li class="chapter" data-level="" data-path="edit-sysmeta.html"><a href="edit-sysmeta.html#additional-resources"><i class="fa fa-check"></i>Additional resources</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="get-package-and-eml.html"><a href="get-package-and-eml.html"><i class="fa fa-check"></i>Get package and EML</a></li>
+<li class="chapter" data-level="" data-path="obsolescence-chain.html"><a href="obsolescence-chain.html"><i class="fa fa-check"></i>Obsolescence chain</a></li>
+<li class="chapter" data-level="" data-path="publish-an-object.html"><a href="publish-an-object.html"><i class="fa fa-check"></i>Publish an object</a></li>
+<li class="chapter" data-level="" data-path="set-dataone-nodes.html"><a href="set-dataone-nodes.html"><i class="fa fa-check"></i>Set DataONE nodes</a><ul>
+<li class="chapter" data-level="" data-path="set-dataone-nodes.html"><a href="set-dataone-nodes.html#staging-test-nodes"><i class="fa fa-check"></i>Staging (Test) nodes</a></li>
+<li class="chapter" data-level="" data-path="set-dataone-nodes.html"><a href="set-dataone-nodes.html#production-nodes"><i class="fa fa-check"></i>Production nodes</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="set-rights-and-access.html"><a href="set-rights-and-access.html"><i class="fa fa-check"></i>Set rights and access</a></li>
+<li class="chapter" data-level="" data-path="show-indexing-status.html"><a href="show-indexing-status.html"><i class="fa fa-check"></i>Show indexing status</a></li>
+<li class="chapter" data-level="" data-path="update-a-package.html"><a href="update-a-package.html"><i class="fa fa-check"></i>Update a package</a><ul>
+<li class="chapter" data-level="" data-path="update-a-package.html"><a href="update-a-package.html#updating-metadata"><i class="fa fa-check"></i>Updating metadata</a></li>
+<li class="chapter" data-level="" data-path="update-a-package.html"><a href="update-a-package.html#updating-data"><i class="fa fa-check"></i>Updating data</a></li>
+<li class="chapter" data-level="" data-path="update-a-package.html"><a href="update-a-package.html#publish-update"><i class="fa fa-check"></i>Publish update</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="update-an-object.html"><a href="update-an-object.html"><i class="fa fa-check"></i>Update an object</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="explore-eml.html"><a href="explore-eml.html"><i class="fa fa-check"></i>Explore EML</a><ul>
+<li class="chapter" data-level="" data-path="access-specific-elements.html"><a href="access-specific-elements.html"><i class="fa fa-check"></i>Access specific elements</a></li>
+<li class="chapter" data-level="" data-path="navigate-through-eml.html"><a href="navigate-through-eml.html"><i class="fa fa-check"></i>Navigate through EML</a></li>
+<li class="chapter" data-level="" data-path="understand-the-eml-schema.html"><a href="understand-the-eml-schema.html"><i class="fa fa-check"></i>Understand the EML schema</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="edit-eml.html"><a href="edit-eml.html"><i class="fa fa-check"></i>Edit EML</a><ul>
+<li class="chapter" data-level="" data-path="edit-an-eml-element.html"><a href="edit-an-eml-element.html"><i class="fa fa-check"></i>Edit an EML element</a><ul>
+<li class="chapter" data-level="" data-path="edit-an-eml-element.html"><a href="edit-an-eml-element.html#edit-eml-with-strings"><i class="fa fa-check"></i>Edit EML with strings</a></li>
+<li class="chapter" data-level="" data-path="edit-an-eml-element.html"><a href="edit-an-eml-element.html#edit-eml-with-the-eml-package"><i class="fa fa-check"></i>Edit EML with the “EML” package</a></li>
+<li class="chapter" data-level="" data-path="edit-an-eml-element.html"><a href="edit-an-eml-element.html#edit-eml-with-objects"><i class="fa fa-check"></i>Edit EML with objects</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="edit-attributelists.html"><a href="edit-attributelists.html"><i class="fa fa-check"></i>Edit attributeLists</a><ul>
+<li class="chapter" data-level="" data-path="edit-attributelists.html"><a href="edit-attributelists.html#edit-attributes"><i class="fa fa-check"></i>Edit Attributes</a></li>
+<li class="chapter" data-level="" data-path="edit-attributelists.html"><a href="edit-attributelists.html#edit-custom-units"><i class="fa fa-check"></i>Edit Custom Units</a></li>
+<li class="chapter" data-level="" data-path="edit-attributelists.html"><a href="edit-attributelists.html#edit-factors"><i class="fa fa-check"></i>Edit Factors</a></li>
+<li class="chapter" data-level="" data-path="edit-attributelists.html"><a href="edit-attributelists.html#finalize-attributelist"><i class="fa fa-check"></i>Finalize attributeList</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="edit-datatables.html"><a href="edit-datatables.html"><i class="fa fa-check"></i>Edit dataTables</a></li>
+<li class="chapter" data-level="" data-path="edit-otherentities.html"><a href="edit-otherentities.html"><i class="fa fa-check"></i>Edit otherEntities</a><ul>
+<li class="chapter" data-level="" data-path="edit-otherentities.html"><a href="edit-otherentities.html#remove-otherentities"><i class="fa fa-check"></i>Remove otherEntities</a></li>
+<li class="chapter" data-level="" data-path="edit-otherentities.html"><a href="edit-otherentities.html#create-otherentities"><i class="fa fa-check"></i>Create otherEntities</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="format-text-in-eml.html"><a href="format-text-in-eml.html"><i class="fa fa-check"></i>Format text in EML</a><ul>
+<li class="chapter" data-level="" data-path="format-text-in-eml.html"><a href="format-text-in-eml.html#type-setting"><i class="fa fa-check"></i>Type-setting</a></li>
+<li class="chapter" data-level="" data-path="format-text-in-eml.html"><a href="format-text-in-eml.html#links"><i class="fa fa-check"></i>Links</a></li>
+<li class="chapter" data-level="" data-path="format-text-in-eml.html"><a href="format-text-in-eml.html#lists"><i class="fa fa-check"></i>Lists</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="set-coverages.html"><a href="set-coverages.html"><i class="fa fa-check"></i>Set coverages</a></li>
+<li class="chapter" data-level="" data-path="set-methods.html"><a href="set-methods.html"><i class="fa fa-check"></i>Set methods</a><ul>
+<li class="chapter" data-level="" data-path="set-methods.html"><a href="set-methods.html#adding-sampling-info-to-methods-section"><i class="fa fa-check"></i>Adding sampling info to methods section</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="set-parties.html"><a href="set-parties.html"><i class="fa fa-check"></i>Set parties</a></li>
+<li class="chapter" data-level="" data-path="set-physical.html"><a href="set-physical.html"><i class="fa fa-check"></i>Set physical</a></li>
+<li class="chapter" data-level="" data-path="use-references.html"><a href="use-references.html"><i class="fa fa-check"></i>Use references</a><ul>
+<li class="chapter" data-level="" data-path="use-references.html"><a href="use-references.html#introduction"><i class="fa fa-check"></i>Introduction</a></li>
+<li class="chapter" data-level="" data-path="use-references.html"><a href="use-references.html#example-with-parties"><i class="fa fa-check"></i>Example with parties</a></li>
+<li class="chapter" data-level="" data-path="use-references.html"><a href="use-references.html#example-with-attributes"><i class="fa fa-check"></i>Example with attributes</a></li>
+<li class="chapter" data-level="" data-path="use-references.html"><a href="use-references.html#add-creator-ids"><i class="fa fa-check"></i>Add creator IDs</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="pi-correspondence.html"><a href="pi-correspondence.html"><i class="fa fa-check"></i>PI correspondence</a><ul>
+<li class="chapter" data-level="" data-path="email-templates.html"><a href="email-templates.html"><i class="fa fa-check"></i>Email Templates</a><ul>
+<li class="chapter" data-level="" data-path="email-templates.html"><a href="email-templates.html#initial-email-template"><i class="fa fa-check"></i>Initial email template</a></li>
+<li class="chapter" data-level="" data-path="email-templates.html"><a href="email-templates.html#final-email-templates"><i class="fa fa-check"></i>Final email templates</a></li>
+<li class="chapter" data-level="" data-path="email-templates.html"><a href="email-templates.html#additional-email-templates"><i class="fa fa-check"></i>Additional email templates</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="pi-faq-email-templates.html"><a href="pi-faq-email-templates.html"><i class="fa fa-check"></i>PI FAQ Email Templates</a></li>
+<li class="chapter" data-level="" data-path="initial-review-checklist.html"><a href="initial-review-checklist.html"><i class="fa fa-check"></i>Initial review checklist</a></li>
+<li class="chapter" data-level="" data-path="navigate-rt.html"><a href="navigate-rt.html"><i class="fa fa-check"></i>Navigate RT</a><ul>
+<li class="chapter" data-level="" data-path="navigate-rt.html"><a href="navigate-rt.html#front-page"><i class="fa fa-check"></i>Front page</a></li>
+<li class="chapter" data-level="" data-path="navigate-rt.html"><a href="navigate-rt.html#all-tickets"><i class="fa fa-check"></i>All tickets</a></li>
+<li class="chapter" data-level="" data-path="navigate-rt.html"><a href="navigate-rt.html#example-ticket"><i class="fa fa-check"></i>Example ticket</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="miscellaneous-file-types.html"><a href="miscellaneous-file-types.html"><i class="fa fa-check"></i>Miscellaneous file types</a><ul>
+<li class="chapter" data-level="" data-path="datalogger-files.html"><a href="datalogger-files.html"><i class="fa fa-check"></i>Datalogger files</a></li>
+<li class="chapter" data-level="" data-path="netcdfs.html"><a href="netcdfs.html"><i class="fa fa-check"></i>NetCDFs</a></li>
+<li class="chapter" data-level="" data-path="spatial-data.html"><a href="spatial-data.html"><i class="fa fa-check"></i>Spatial data</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="wrangle-data.html"><a href="wrangle-data.html"><i class="fa fa-check"></i>Wrangle data</a><ul>
+<li class="chapter" data-level="" data-path="clean-column-names.html"><a href="clean-column-names.html"><i class="fa fa-check"></i>Clean column names</a></li>
+<li class="chapter" data-level="" data-path="fix-excel-dates.html"><a href="fix-excel-dates.html"><i class="fa fa-check"></i>Fix Excel dates</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="solr-queries.html"><a href="solr-queries.html"><i class="fa fa-check"></i>Solr queries</a><ul>
+<li class="chapter" data-level="" data-path="construct-a-query.html"><a href="construct-a-query.html"><i class="fa fa-check"></i>Construct a query</a></li>
+<li class="chapter" data-level="" data-path="query-solr-via-a-browser.html"><a href="query-solr-via-a-browser.html"><i class="fa fa-check"></i>Query Solr via a browser</a></li>
+<li class="chapter" data-level="" data-path="query-solr-through-r.html"><a href="query-solr-through-r.html"><i class="fa fa-check"></i>Query Solr through R</a></li>
+<li class="chapter" data-level="" data-path="use-facets.html"><a href="use-facets.html"><i class="fa fa-check"></i>Use facets</a></li>
+<li class="chapter" data-level="" data-path="use-stats.html"><a href="use-stats.html"><i class="fa fa-check"></i>Use stats</a></li>
+<li class="chapter" data-level="" data-path="example-solr-queries.html"><a href="example-solr-queries.html"><i class="fa fa-check"></i>Example Solr queries</a><ul>
+<li class="chapter" data-level="" data-path="example-solr-queries.html"><a href="example-solr-queries.html#find-everything"><i class="fa fa-check"></i>Find everything</a></li>
+<li class="chapter" data-level="" data-path="example-solr-queries.html"><a href="example-solr-queries.html#query-a-wildcard-expression"><i class="fa fa-check"></i>Query a wildcard expression</a></li>
+<li class="chapter" data-level="" data-path="example-solr-queries.html"><a href="example-solr-queries.html#query-multiple-fields"><i class="fa fa-check"></i>Query multiple fields</a></li>
+<li class="chapter" data-level="" data-path="example-solr-queries.html"><a href="example-solr-queries.html#query-multiple-conditions-within-one-field"><i class="fa fa-check"></i>Query multiple conditions within one field</a></li>
+<li class="chapter" data-level="" data-path="example-solr-queries.html"><a href="example-solr-queries.html#use-not-in-a-query"><i class="fa fa-check"></i>Use NOT in a query</a></li>
+<li class="chapter" data-level="" data-path="example-solr-queries.html"><a href="example-solr-queries.html#query-a-coordinating-node"><i class="fa fa-check"></i>Query a coordinating node</a></li>
+<li class="chapter" data-level="" data-path="example-solr-queries.html"><a href="example-solr-queries.html#use-facets-1"><i class="fa fa-check"></i>Use facets</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="more-resources.html"><a href="more-resources.html"><i class="fa fa-check"></i>More resources</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="adc-web-submissions.html"><a href="adc-web-submissions.html"><i class="fa fa-check"></i>ADC Web Submissions</a><ul>
+<li class="chapter" data-level="" data-path="add-physicals-to-submissions.html"><a href="add-physicals-to-submissions.html"><i class="fa fa-check"></i>Add Physicals to Submissions</a></li>
+<li class="chapter" data-level="" data-path="assess-attributes.html"><a href="assess-attributes.html"><i class="fa fa-check"></i>Assess Attributes</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://nceas.github.io/datateam-training/training/" target="blank">Training</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./"></a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="example-solr-queries" class="section level2">
+<h2>Example Solr queries</h2>
+<p>For additional examples and explanations, check out the Apache Lucene <a href="https://lucene.apache.org/core/2_9_4/queryparsersyntax.html">Query Parser Syntax</a> page.</p>
+<div id="find-everything" class="section level3">
+<h3>Find everything</h3>
+<pre class="sourceCode r"><code class="sourceCode r">result &lt;-<span class="st"> </span>dataone<span class="op">::</span><span class="kw">query</span>(mn, <span class="kw">list</span>(<span class="dt">q=</span><span class="st">&quot;*:*&quot;</span>,
+                                  <span class="dt">fl=</span><span class="st">&quot;*&quot;</span>,
+                                  <span class="dt">rows=</span><span class="st">&quot;20&quot;</span>),
+                         <span class="dt">as =</span> <span class="st">&quot;data.frame&quot;</span>)</code></pre>
+<div style="border: 1px solid #ddd; padding: 5px; overflow-y: scroll; height:400px; overflow-x: scroll; width:100%; ">
+<table class="table table-striped table-hover table-condensed" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+id
+</th>
+<th style="text-align:left;">
+sku
+</th>
+<th style="text-align:left;">
+identifier
+</th>
+<th style="text-align:left;">
+fileName
+</th>
+<th style="text-align:left;">
+formatId
+</th>
+<th style="text-align:left;">
+formatType
+</th>
+<th style="text-align:left;">
+size
+</th>
+<th style="text-align:left;">
+checksum
+</th>
+<th style="text-align:left;">
+submitter
+</th>
+<th style="text-align:left;">
+checksumAlgorithm
+</th>
+<th style="text-align:left;">
+rightsHolder
+</th>
+<th style="text-align:left;">
+replicationAllowed
+</th>
+<th style="text-align:left;">
+numberReplicas
+</th>
+<th style="text-align:left;">
+dateUploaded
+</th>
+<th style="text-align:left;">
+updateDate
+</th>
+<th style="text-align:left;">
+dateModified
+</th>
+<th style="text-align:left;">
+datasource
+</th>
+<th style="text-align:left;">
+authoritativeMN
+</th>
+<th style="text-align:left;">
+readPermission
+</th>
+<th style="text-align:left;">
+writePermission
+</th>
+<th style="text-align:left;">
+changePermission
+</th>
+<th style="text-align:left;">
+isPublic
+</th>
+<th style="text-align:left;">
+dataUrl
+</th>
+<th style="text-align:left;">
+create_count_i
+</th>
+<th style="text-align:left;">
+isService
+</th>
+<th style="text-align:left;">
+serviceCoupling
+</th>
+<th style="text-align:left;">
+read_count_i
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+<a href="urn:uuid:7f510c81-45cd-4518-a21e-ad55a5cd7dd5" class="uri">urn:uuid:7f510c81-45cd-4518-a21e-ad55a5cd7dd5</a>
+</td>
+<td style="text-align:left;">
+<a href="urn:uuid:7f510c81-45cd-4518-a21e-ad55a5cd7dd5" class="uri">urn:uuid:7f510c81-45cd-4518-a21e-ad55a5cd7dd5</a>
+</td>
+<td style="text-align:left;">
+<a href="urn:uuid:7f510c81-45cd-4518-a21e-ad55a5cd7dd5" class="uri">urn:uuid:7f510c81-45cd-4518-a21e-ad55a5cd7dd5</a>
+</td>
+<td style="text-align:left;">
+2010_07_20_ISR.txt
+</td>
+<td style="text-align:left;">
+text/plain
+</td>
+<td style="text-align:left;">
+DATA
+</td>
+<td style="text-align:left;">
+44928231
+</td>
+<td style="text-align:left;">
+7acd74a8eeea31bcd6f5348bf34186fd0e4148e4561c8456c34cd6f64d94d62e
+</td>
+<td style="text-align:left;">
+CN=Bryce Mecum A27576,O=Google,C=US,DC=cilogon,DC=org
+</td>
+<td style="text-align:left;">
+SHA256
+</td>
+<td style="text-align:left;">
+CN=arctic-data-admins,DC=dataone,DC=org
+</td>
+<td style="text-align:left;">
+TRUE
+</td>
+<td style="text-align:left;">
+3
+</td>
+<td style="text-align:left;">
+2014-11-03 19:09:09
+</td>
+<td style="text-align:left;">
+2014-11-03 19:09:09
+</td>
+<td style="text-align:left;">
+2016-10-22 08:23:33
+</td>
+<td style="text-align:left;">
+<a href="urn:node:ARCTIC" class="uri">urn:node:ARCTIC</a>
+</td>
+<td style="text-align:left;">
+<a href="urn:node:ARCTIC" class="uri">urn:node:ARCTIC</a>
+</td>
+<td style="text-align:left;">
+CN=Bryce Mecum A27576,O=Google,C=US,DC=cilogon,DC=org public CN=arctic-data-admins,DC=dataone,DC=org
+</td>
+<td style="text-align:left;">
+CN=Bryce Mecum A27576,O=Google,C=US,DC=cilogon,DC=org CN=arctic-data-admins,DC=dataone,DC=org
+</td>
+<td style="text-align:left;">
+CN=Bryce Mecum A27576,O=Google,C=US,DC=cilogon,DC=org CN=arctic-data-admins,DC=dataone,DC=org
+</td>
+<td style="text-align:left;">
+TRUE
+</td>
+<td style="text-align:left;">
+<a href="https://cn.dataone.org/cn/v2/resolve/urn%3Auuid%3A7f510c81-45cd-4518-a21e-ad55a5cd7dd5">https://cn.dataone.org/cn/v2/resolve/urn%3Auuid%3A7f510c81-45cd-4518-a21e-ad55a5cd7dd5</a>
+</td>
+<td style="text-align:left;">
+1
+</td>
+<td style="text-align:left;">
+FALSE
+</td>
+<td style="text-align:left;">
+false
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="urn:uuid:e345d4e1-3f38-4543-ac50-ae9f0217ab6d" class="uri">urn:uuid:e345d4e1-3f38-4543-ac50-ae9f0217ab6d</a>
+</td>
+<td style="text-align:left;">
+<a href="urn:uuid:e345d4e1-3f38-4543-ac50-ae9f0217ab6d" class="uri">urn:uuid:e345d4e1-3f38-4543-ac50-ae9f0217ab6d</a>
+</td>
+<td style="text-align:left;">
+<a href="urn:uuid:e345d4e1-3f38-4543-ac50-ae9f0217ab6d" class="uri">urn:uuid:e345d4e1-3f38-4543-ac50-ae9f0217ab6d</a>
+</td>
+<td style="text-align:left;">
+BeaufortAON2010-2011_06_2011_110602_120000_AU_BF10.wav
+</td>
+<td style="text-align:left;">
+application/octet-stream
+</td>
+<td style="text-align:left;">
+DATA
+</td>
+<td style="text-align:left;">
+29491244
+</td>
+<td style="text-align:left;">
+6d121b9441109825dfe5d92feaf12707463a4aa66cf8c517efef400592440be0
+</td>
+<td style="text-align:left;">
+CN=Bryce Mecum A27576,O=Google,C=US,DC=cilogon,DC=org
+</td>
+<td style="text-align:left;">
+SHA256
+</td>
+<td style="text-align:left;">
+CN=arctic-data-admins,DC=dataone,DC=org
+</td>
+<td style="text-align:left;">
+TRUE
+</td>
+<td style="text-align:left;">
+3
+</td>
+<td style="text-align:left;">
+2014-11-03 19:03:02
+</td>
+<td style="text-align:left;">
+2014-11-03 19:03:02
+</td>
+<td style="text-align:left;">
+2016-10-22 09:27:02
+</td>
+<td style="text-align:left;">
+<a href="urn:node:ARCTIC" class="uri">urn:node:ARCTIC</a>
+</td>
+<td style="text-align:left;">
+<a href="urn:node:ARCTIC" class="uri">urn:node:ARCTIC</a>
+</td>
+<td style="text-align:left;">
+CN=Bryce Mecum A27576,O=Google,C=US,DC=cilogon,DC=org public CN=arctic-data-admins,DC=dataone,DC=org
+</td>
+<td style="text-align:left;">
+CN=Bryce Mecum A27576,O=Google,C=US,DC=cilogon,DC=org CN=arctic-data-admins,DC=dataone,DC=org
+</td>
+<td style="text-align:left;">
+CN=Bryce Mecum A27576,O=Google,C=US,DC=cilogon,DC=org CN=arctic-data-admins,DC=dataone,DC=org
+</td>
+<td style="text-align:left;">
+TRUE
+</td>
+<td style="text-align:left;">
+<a href="https://cn.dataone.org/cn/v2/resolve/urn%3Auuid%3Ae345d4e1-3f38-4543-ac50-ae9f0217ab6d">https://cn.dataone.org/cn/v2/resolve/urn%3Auuid%3Ae345d4e1-3f38-4543-ac50-ae9f0217ab6d</a>
+</td>
+<td style="text-align:left;">
+1
+</td>
+<td style="text-align:left;">
+FALSE
+</td>
+<td style="text-align:left;">
+false
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="urn:uuid:81ac520e-1b07-4b04-ab00-b2424c7c9895" class="uri">urn:uuid:81ac520e-1b07-4b04-ab00-b2424c7c9895</a>
+</td>
+<td style="text-align:left;">
+<a href="urn:uuid:81ac520e-1b07-4b04-ab00-b2424c7c9895" class="uri">urn:uuid:81ac520e-1b07-4b04-ab00-b2424c7c9895</a>
+</td>
+<td style="text-align:left;">
+<a href="urn:uuid:81ac520e-1b07-4b04-ab00-b2424c7c9895" class="uri">urn:uuid:81ac520e-1b07-4b04-ab00-b2424c7c9895</a>
+</td>
+<td style="text-align:left;">
+BeaufortAON2010-2011_07_2011_110714_230000_AU_BF10.wav
+</td>
+<td style="text-align:left;">
+application/octet-stream
+</td>
+<td style="text-align:left;">
+DATA
+</td>
+<td style="text-align:left;">
+29491244
+</td>
+<td style="text-align:left;">
+47392d6a9ee238e82b20a2a6e632ac2d4c984f7c45e0bcb5a9e65c1caee3ba6f
+</td>
+<td style="text-align:left;">
+CN=Bryce Mecum A27576,O=Google,C=US,DC=cilogon,DC=org
+</td>
+<td style="text-align:left;">
+SHA256
+</td>
+<td style="text-align:left;">
+CN=arctic-data-admins,DC=dataone,DC=org
+</td>
+<td style="text-align:left;">
+TRUE
+</td>
+<td style="text-align:left;">
+3
+</td>
+<td style="text-align:left;">
+2014-11-03 19:03:02
+</td>
+<td style="text-align:left;">
+2014-11-03 19:03:02
+</td>
+<td style="text-align:left;">
+2016-10-22 09:34:15
+</td>
+<td style="text-align:left;">
+<a href="urn:node:ARCTIC" class="uri">urn:node:ARCTIC</a>
+</td>
+<td style="text-align:left;">
+<a href="urn:node:ARCTIC" class="uri">urn:node:ARCTIC</a>
+</td>
+<td style="text-align:left;">
+CN=Bryce Mecum A27576,O=Google,C=US,DC=cilogon,DC=org public CN=arctic-data-admins,DC=dataone,DC=org
+</td>
+<td style="text-align:left;">
+CN=Bryce Mecum A27576,O=Google,C=US,DC=cilogon,DC=org CN=arctic-data-admins,DC=dataone,DC=org
+</td>
+<td style="text-align:left;">
+CN=Bryce Mecum A27576,O=Google,C=US,DC=cilogon,DC=org CN=arctic-data-admins,DC=dataone,DC=org
+</td>
+<td style="text-align:left;">
+TRUE
+</td>
+<td style="text-align:left;">
+<a href="https://cn.dataone.org/cn/v2/resolve/urn%3Auuid%3A81ac520e-1b07-4b04-ab00-b2424c7c9895">https://cn.dataone.org/cn/v2/resolve/urn%3Auuid%3A81ac520e-1b07-4b04-ab00-b2424c7c9895</a>
+</td>
+<td style="text-align:left;">
+1
+</td>
+<td style="text-align:left;">
+FALSE
+</td>
+<td style="text-align:left;">
+false
+</td>
+<td style="text-align:left;">
+2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="urn:uuid:b6ccadf9-a792-4c03-aba1-75578ed25bbd" class="uri">urn:uuid:b6ccadf9-a792-4c03-aba1-75578ed25bbd</a>
+</td>
+<td style="text-align:left;">
+<a href="urn:uuid:b6ccadf9-a792-4c03-aba1-75578ed25bbd" class="uri">urn:uuid:b6ccadf9-a792-4c03-aba1-75578ed25bbd</a>
+</td>
+<td style="text-align:left;">
+<a href="urn:uuid:b6ccadf9-a792-4c03-aba1-75578ed25bbd" class="uri">urn:uuid:b6ccadf9-a792-4c03-aba1-75578ed25bbd</a>
+</td>
+<td style="text-align:left;">
+2009_09_30_NAL.txt
+</td>
+<td style="text-align:left;">
+text/plain
+</td>
+<td style="text-align:left;">
+DATA
+</td>
+<td style="text-align:left;">
+44928201
+</td>
+<td style="text-align:left;">
+386a08f0bc87f1cf1f0b8472bfbb4eef33f194bd12f3f3ef04f6a4c6a57e9939
+</td>
+<td style="text-align:left;">
+CN=Bryce Mecum A27576,O=Google,C=US,DC=cilogon,DC=org
+</td>
+<td style="text-align:left;">
+SHA256
+</td>
+<td style="text-align:left;">
+CN=arctic-data-admins,DC=dataone,DC=org
+</td>
+<td style="text-align:left;">
+TRUE
+</td>
+<td style="text-align:left;">
+3
+</td>
+<td style="text-align:left;">
+2014-11-03 19:09:09
+</td>
+<td style="text-align:left;">
+2014-11-03 19:09:09
+</td>
+<td style="text-align:left;">
+2016-10-22 08:21:21
+</td>
+<td style="text-align:left;">
+<a href="urn:node:ARCTIC" class="uri">urn:node:ARCTIC</a>
+</td>
+<td style="text-align:left;">
+<a href="urn:node:ARCTIC" class="uri">urn:node:ARCTIC</a>
+</td>
+<td style="text-align:left;">
+CN=Bryce Mecum A27576,O=Google,C=US,DC=cilogon,DC=org public CN=arctic-data-admins,DC=dataone,DC=org
+</td>
+<td style="text-align:left;">
+CN=Bryce Mecum A27576,O=Google,C=US,DC=cilogon,DC=org CN=arctic-data-admins,DC=dataone,DC=org
+</td>
+<td style="text-align:left;">
+CN=Bryce Mecum A27576,O=Google,C=US,DC=cilogon,DC=org CN=arctic-data-admins,DC=dataone,DC=org
+</td>
+<td style="text-align:left;">
+TRUE
+</td>
+<td style="text-align:left;">
+<a href="https://cn.dataone.org/cn/v2/resolve/urn%3Auuid%3Ab6ccadf9-a792-4c03-aba1-75578ed25bbd">https://cn.dataone.org/cn/v2/resolve/urn%3Auuid%3Ab6ccadf9-a792-4c03-aba1-75578ed25bbd</a>
+</td>
+<td style="text-align:left;">
+1
+</td>
+<td style="text-align:left;">
+FALSE
+</td>
+<td style="text-align:left;">
+false
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="urn:uuid:8fe0675f-67e5-4aca-a672-d1bd87b0e71a" class="uri">urn:uuid:8fe0675f-67e5-4aca-a672-d1bd87b0e71a</a>
+</td>
+<td style="text-align:left;">
+<a href="urn:uuid:8fe0675f-67e5-4aca-a672-d1bd87b0e71a" class="uri">urn:uuid:8fe0675f-67e5-4aca-a672-d1bd87b0e71a</a>
+</td>
+<td style="text-align:left;">
+<a href="urn:uuid:8fe0675f-67e5-4aca-a672-d1bd87b0e71a" class="uri">urn:uuid:8fe0675f-67e5-4aca-a672-d1bd87b0e71a</a>
+</td>
+<td style="text-align:left;">
+2009_02_17_HOR.txt
+</td>
+<td style="text-align:left;">
+text/plain
+</td>
+<td style="text-align:left;">
+DATA
+</td>
+<td style="text-align:left;">
+45792204
+</td>
+<td style="text-align:left;">
+962180d9a2dba907872210e6674afdb7af7c87f8146edac670a7acd3d8a87d3e
+</td>
+<td style="text-align:left;">
+CN=Bryce Mecum A27576,O=Google,C=US,DC=cilogon,DC=org
+</td>
+<td style="text-align:left;">
+SHA256
+</td>
+<td style="text-align:left;">
+CN=arctic-data-admins,DC=dataone,DC=org
+</td>
+<td style="text-align:left;">
+TRUE
+</td>
+<td style="text-align:left;">
+3
+</td>
+<td style="text-align:left;">
+2014-11-03 19:09:09
+</td>
+<td style="text-align:left;">
+2014-11-03 19:09:09
+</td>
+<td style="text-align:left;">
+2016-10-22 08:22:14
+</td>
+<td style="text-align:left;">
+<a href="urn:node:ARCTIC" class="uri">urn:node:ARCTIC</a>
+</td>
+<td style="text-align:left;">
+<a href="urn:node:ARCTIC" class="uri">urn:node:ARCTIC</a>
+</td>
+<td style="text-align:left;">
+CN=Bryce Mecum A27576,O=Google,C=US,DC=cilogon,DC=org public CN=arctic-data-admins,DC=dataone,DC=org
+</td>
+<td style="text-align:left;">
+CN=Bryce Mecum A27576,O=Google,C=US,DC=cilogon,DC=org CN=arctic-data-admins,DC=dataone,DC=org
+</td>
+<td style="text-align:left;">
+CN=Bryce Mecum A27576,O=Google,C=US,DC=cilogon,DC=org CN=arctic-data-admins,DC=dataone,DC=org
+</td>
+<td style="text-align:left;">
+TRUE
+</td>
+<td style="text-align:left;">
+<a href="https://cn.dataone.org/cn/v2/resolve/urn%3Auuid%3A8fe0675f-67e5-4aca-a672-d1bd87b0e71a">https://cn.dataone.org/cn/v2/resolve/urn%3Auuid%3A8fe0675f-67e5-4aca-a672-d1bd87b0e71a</a>
+</td>
+<td style="text-align:left;">
+1
+</td>
+<td style="text-align:left;">
+FALSE
+</td>
+<td style="text-align:left;">
+false
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="urn:uuid:912a5228-c9f0-4647-9551-f000cae421cc" class="uri">urn:uuid:912a5228-c9f0-4647-9551-f000cae421cc</a>
+</td>
+<td style="text-align:left;">
+<a href="urn:uuid:912a5228-c9f0-4647-9551-f000cae421cc" class="uri">urn:uuid:912a5228-c9f0-4647-9551-f000cae421cc</a>
+</td>
+<td style="text-align:left;">
+<a href="urn:uuid:912a5228-c9f0-4647-9551-f000cae421cc" class="uri">urn:uuid:912a5228-c9f0-4647-9551-f000cae421cc</a>
+</td>
+<td style="text-align:left;">
+BeaufortAON2010-2011_02_2011_110217_130000_AU_BF10.wav
+</td>
+<td style="text-align:left;">
+application/octet-stream
+</td>
+<td style="text-align:left;">
+DATA
+</td>
+<td style="text-align:left;">
+29491244
+</td>
+<td style="text-align:left;">
+1fbe43ec9d53ea49900c9fa78f2b0d3f9e1363308f11271dcb92cc82e90fb8a8
+</td>
+<td style="text-align:left;">
+CN=Bryce Mecum A27576,O=Google,C=US,DC=cilogon,DC=org
+</td>
+<td style="text-align:left;">
+SHA256
+</td>
+<td style="text-align:left;">
+CN=arctic-data-admins,DC=dataone,DC=org
+</td>
+<td style="text-align:left;">
+TRUE
+</td>
+<td style="text-align:left;">
+3
+</td>
+<td style="text-align:left;">
+2014-11-03 19:03:02
+</td>
+<td style="text-align:left;">
+2014-11-03 19:03:02
+</td>
+<td style="text-align:left;">
+2016-10-22 08:46:18
+</td>
+<td style="text-align:left;">
+<a href="urn:node:ARCTIC" class="uri">urn:node:ARCTIC</a>
+</td>
+<td style="text-align:left;">
+<a href="urn:node:ARCTIC" class="uri">urn:node:ARCTIC</a>
+</td>
+<td style="text-align:left;">
+CN=Bryce Mecum A27576,O=Google,C=US,DC=cilogon,DC=org public CN=arctic-data-admins,DC=dataone,DC=org
+</td>
+<td style="text-align:left;">
+CN=Bryce Mecum A27576,O=Google,C=US,DC=cilogon,DC=org CN=arctic-data-admins,DC=dataone,DC=org
+</td>
+<td style="text-align:left;">
+CN=Bryce Mecum A27576,O=Google,C=US,DC=cilogon,DC=org CN=arctic-data-admins,DC=dataone,DC=org
+</td>
+<td style="text-align:left;">
+TRUE
+</td>
+<td style="text-align:left;">
+<a href="https://cn.dataone.org/cn/v2/resolve/urn%3Auuid%3A912a5228-c9f0-4647-9551-f000cae421cc">https://cn.dataone.org/cn/v2/resolve/urn%3Auuid%3A912a5228-c9f0-4647-9551-f000cae421cc</a>
+</td>
+<td style="text-align:left;">
+1
+</td>
+<td style="text-align:left;">
+FALSE
+</td>
+<td style="text-align:left;">
+false
+</td>
+<td style="text-align:left;">
+3
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="urn:uuid:f59ea220-b106-439e-ace8-a80c6ba3d8f1" class="uri">urn:uuid:f59ea220-b106-439e-ace8-a80c6ba3d8f1</a>
+</td>
+<td style="text-align:left;">
+<a href="urn:uuid:f59ea220-b106-439e-ace8-a80c6ba3d8f1" class="uri">urn:uuid:f59ea220-b106-439e-ace8-a80c6ba3d8f1</a>
+</td>
+<td style="text-align:left;">
+<a href="urn:uuid:f59ea220-b106-439e-ace8-a80c6ba3d8f1" class="uri">urn:uuid:f59ea220-b106-439e-ace8-a80c6ba3d8f1</a>
+</td>
+<td style="text-align:left;">
+20080407_20080407.184330.f-15.rtd.000720.5168.bz2
+</td>
+<td style="text-align:left;">
+application/x-bzip2
+</td>
+<td style="text-align:left;">
+DATA
+</td>
+<td style="text-align:left;">
+28878803
+</td>
+<td style="text-align:left;">
+571735b7e61d45593be5d13c9c40debfd430e2bdca4251ad5ef19407a422a9b0
+</td>
+<td style="text-align:left;">
+CN=Bryce Mecum A27576,O=Google,C=US,DC=cilogon,DC=org
+</td>
+<td style="text-align:left;">
+SHA256
+</td>
+<td style="text-align:left;">
+CN=arctic-data-admins,DC=dataone,DC=org
+</td>
+<td style="text-align:left;">
+TRUE
+</td>
+<td style="text-align:left;">
+3
+</td>
+<td style="text-align:left;">
+2014-11-03 19:24:02
+</td>
+<td style="text-align:left;">
+2014-11-03 19:24:02
+</td>
+<td style="text-align:left;">
+2016-10-22 12:59:10
+</td>
+<td style="text-align:left;">
+<a href="urn:node:ARCTIC" class="uri">urn:node:ARCTIC</a>
+</td>
+<td style="text-align:left;">
+<a href="urn:node:ARCTIC" class="uri">urn:node:ARCTIC</a>
+</td>
+<td style="text-align:left;">
+CN=Bryce Mecum A27576,O=Google,C=US,DC=cilogon,DC=org public CN=arctic-data-admins,DC=dataone,DC=org
+</td>
+<td style="text-align:left;">
+CN=Bryce Mecum A27576,O=Google,C=US,DC=cilogon,DC=org CN=arctic-data-admins,DC=dataone,DC=org
+</td>
+<td style="text-align:left;">
+CN=Bryce Mecum A27576,O=Google,C=US,DC=cilogon,DC=org CN=arctic-data-admins,DC=dataone,DC=org
+</td>
+<td style="text-align:left;">
+TRUE
+</td>
+<td style="text-align:left;">
+<a href="https://cn.dataone.org/cn/v2/resolve/urn%3Auuid%3Af59ea220-b106-439e-ace8-a80c6ba3d8f1">https://cn.dataone.org/cn/v2/resolve/urn%3Auuid%3Af59ea220-b106-439e-ace8-a80c6ba3d8f1</a>
+</td>
+<td style="text-align:left;">
+1
+</td>
+<td style="text-align:left;">
+FALSE
+</td>
+<td style="text-align:left;">
+false
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="urn:uuid:7bdab6cc-8dc1-4c49-a80b-ca771c18eaa9" class="uri">urn:uuid:7bdab6cc-8dc1-4c49-a80b-ca771c18eaa9</a>
+</td>
+<td style="text-align:left;">
+<a href="urn:uuid:7bdab6cc-8dc1-4c49-a80b-ca771c18eaa9" class="uri">urn:uuid:7bdab6cc-8dc1-4c49-a80b-ca771c18eaa9</a>
+</td>
+<td style="text-align:left;">
+<a href="urn:uuid:7bdab6cc-8dc1-4c49-a80b-ca771c18eaa9" class="uri">urn:uuid:7bdab6cc-8dc1-4c49-a80b-ca771c18eaa9</a>
+</td>
+<td style="text-align:left;">
+2007_08_14_LYR.txt
+</td>
+<td style="text-align:left;">
+text/plain
+</td>
+<td style="text-align:left;">
+DATA
+</td>
+<td style="text-align:left;">
+44928201
+</td>
+<td style="text-align:left;">
+8560d8165312401d71a8ec5e0adcbbb233cfe2576dd2c16f5bd6c4fc0ade8a30
+</td>
+<td style="text-align:left;">
+CN=Bryce Mecum A27576,O=Google,C=US,DC=cilogon,DC=org
+</td>
+<td style="text-align:left;">
+SHA256
+</td>
+<td style="text-align:left;">
+CN=arctic-data-admins,DC=dataone,DC=org
+</td>
+<td style="text-align:left;">
+TRUE
+</td>
+<td style="text-align:left;">
+3
+</td>
+<td style="text-align:left;">
+2014-11-03 19:09:09
+</td>
+<td style="text-align:left;">
+2014-11-03 19:09:09
+</td>
+<td style="text-align:left;">
+2016-10-22 08:22:50
+</td>
+<td style="text-align:left;">
+<a href="urn:node:ARCTIC" class="uri">urn:node:ARCTIC</a>
+</td>
+<td style="text-align:left;">
+<a href="urn:node:ARCTIC" class="uri">urn:node:ARCTIC</a>
+</td>
+<td style="text-align:left;">
+CN=Bryce Mecum A27576,O=Google,C=US,DC=cilogon,DC=org public CN=arctic-data-admins,DC=dataone,DC=org
+</td>
+<td style="text-align:left;">
+CN=Bryce Mecum A27576,O=Google,C=US,DC=cilogon,DC=org CN=arctic-data-admins,DC=dataone,DC=org
+</td>
+<td style="text-align:left;">
+CN=Bryce Mecum A27576,O=Google,C=US,DC=cilogon,DC=org CN=arctic-data-admins,DC=dataone,DC=org
+</td>
+<td style="text-align:left;">
+TRUE
+</td>
+<td style="text-align:left;">
+<a href="https://cn.dataone.org/cn/v2/resolve/urn%3Auuid%3A7bdab6cc-8dc1-4c49-a80b-ca771c18eaa9">https://cn.dataone.org/cn/v2/resolve/urn%3Auuid%3A7bdab6cc-8dc1-4c49-a80b-ca771c18eaa9</a>
+</td>
+<td style="text-align:left;">
+1
+</td>
+<td style="text-align:left;">
+FALSE
+</td>
+<td style="text-align:left;">
+false
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="urn:uuid:c64c38fd-0b10-4ecf-b37f-5eca336a5c57" class="uri">urn:uuid:c64c38fd-0b10-4ecf-b37f-5eca336a5c57</a>
+</td>
+<td style="text-align:left;">
+<a href="urn:uuid:c64c38fd-0b10-4ecf-b37f-5eca336a5c57" class="uri">urn:uuid:c64c38fd-0b10-4ecf-b37f-5eca336a5c57</a>
+</td>
+<td style="text-align:left;">
+<a href="urn:uuid:c64c38fd-0b10-4ecf-b37f-5eca336a5c57" class="uri">urn:uuid:c64c38fd-0b10-4ecf-b37f-5eca336a5c57</a>
+</td>
+<td style="text-align:left;">
+BeaufortAON2010-2011_12_2010_101211_170000_AU_BF10.wav
+</td>
+<td style="text-align:left;">
+application/octet-stream
+</td>
+<td style="text-align:left;">
+DATA
+</td>
+<td style="text-align:left;">
+29491244
+</td>
+<td style="text-align:left;">
+4feaddcb7160a670bf7e71ce2e889685ed598a07bddae622bb9a6dc1e8a46889
+</td>
+<td style="text-align:left;">
+CN=Bryce Mecum A27576,O=Google,C=US,DC=cilogon,DC=org
+</td>
+<td style="text-align:left;">
+SHA256
+</td>
+<td style="text-align:left;">
+CN=arctic-data-admins,DC=dataone,DC=org
+</td>
+<td style="text-align:left;">
+TRUE
+</td>
+<td style="text-align:left;">
+3
+</td>
+<td style="text-align:left;">
+2014-11-03 19:03:02
+</td>
+<td style="text-align:left;">
+2014-11-03 19:03:02
+</td>
+<td style="text-align:left;">
+2016-10-22 09:07:57
+</td>
+<td style="text-align:left;">
+<a href="urn:node:ARCTIC" class="uri">urn:node:ARCTIC</a>
+</td>
+<td style="text-align:left;">
+<a href="urn:node:ARCTIC" class="uri">urn:node:ARCTIC</a>
+</td>
+<td style="text-align:left;">
+CN=Bryce Mecum A27576,O=Google,C=US,DC=cilogon,DC=org public CN=arctic-data-admins,DC=dataone,DC=org
+</td>
+<td style="text-align:left;">
+CN=Bryce Mecum A27576,O=Google,C=US,DC=cilogon,DC=org CN=arctic-data-admins,DC=dataone,DC=org
+</td>
+<td style="text-align:left;">
+CN=Bryce Mecum A27576,O=Google,C=US,DC=cilogon,DC=org CN=arctic-data-admins,DC=dataone,DC=org
+</td>
+<td style="text-align:left;">
+TRUE
+</td>
+<td style="text-align:left;">
+<a href="https://cn.dataone.org/cn/v2/resolve/urn%3Auuid%3Ac64c38fd-0b10-4ecf-b37f-5eca336a5c57">https://cn.dataone.org/cn/v2/resolve/urn%3Auuid%3Ac64c38fd-0b10-4ecf-b37f-5eca336a5c57</a>
+</td>
+<td style="text-align:left;">
+1
+</td>
+<td style="text-align:left;">
+FALSE
+</td>
+<td style="text-align:left;">
+false
+</td>
+<td style="text-align:left;">
+2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="urn:uuid:d21f2f63-8f40-4753-99a6-31086f91991c" class="uri">urn:uuid:d21f2f63-8f40-4753-99a6-31086f91991c</a>
+</td>
+<td style="text-align:left;">
+<a href="urn:uuid:d21f2f63-8f40-4753-99a6-31086f91991c" class="uri">urn:uuid:d21f2f63-8f40-4753-99a6-31086f91991c</a>
+</td>
+<td style="text-align:left;">
+<a href="urn:uuid:d21f2f63-8f40-4753-99a6-31086f91991c" class="uri">urn:uuid:d21f2f63-8f40-4753-99a6-31086f91991c</a>
+</td>
+<td style="text-align:left;">
+BeaufortAON2010-2011_10_2010_101025_020000_AU_BF10.wav
+</td>
+<td style="text-align:left;">
+application/octet-stream
+</td>
+<td style="text-align:left;">
+DATA
+</td>
+<td style="text-align:left;">
+29491244
+</td>
+<td style="text-align:left;">
+4eab2b2e986c2e89d04c9a9e4e4fa75eaa90101af0d985edcefa130c9d60bf47
+</td>
+<td style="text-align:left;">
+CN=Bryce Mecum A27576,O=Google,C=US,DC=cilogon,DC=org
+</td>
+<td style="text-align:left;">
+SHA256
+</td>
+<td style="text-align:left;">
+CN=arctic-data-admins,DC=dataone,DC=org
+</td>
+<td style="text-align:left;">
+TRUE
+</td>
+<td style="text-align:left;">
+3
+</td>
+<td style="text-align:left;">
+2014-11-03 19:03:02
+</td>
+<td style="text-align:left;">
+2014-11-03 19:03:02
+</td>
+<td style="text-align:left;">
+2016-10-22 09:25:50
+</td>
+<td style="text-align:left;">
+<a href="urn:node:ARCTIC" class="uri">urn:node:ARCTIC</a>
+</td>
+<td style="text-align:left;">
+<a href="urn:node:ARCTIC" class="uri">urn:node:ARCTIC</a>
+</td>
+<td style="text-align:left;">
+CN=Bryce Mecum A27576,O=Google,C=US,DC=cilogon,DC=org public CN=arctic-data-admins,DC=dataone,DC=org
+</td>
+<td style="text-align:left;">
+CN=Bryce Mecum A27576,O=Google,C=US,DC=cilogon,DC=org CN=arctic-data-admins,DC=dataone,DC=org
+</td>
+<td style="text-align:left;">
+CN=Bryce Mecum A27576,O=Google,C=US,DC=cilogon,DC=org CN=arctic-data-admins,DC=dataone,DC=org
+</td>
+<td style="text-align:left;">
+TRUE
+</td>
+<td style="text-align:left;">
+<a href="https://cn.dataone.org/cn/v2/resolve/urn%3Auuid%3Ad21f2f63-8f40-4753-99a6-31086f91991c">https://cn.dataone.org/cn/v2/resolve/urn%3Auuid%3Ad21f2f63-8f40-4753-99a6-31086f91991c</a>
+</td>
+<td style="text-align:left;">
+1
+</td>
+<td style="text-align:left;">
+FALSE
+</td>
+<td style="text-align:left;">
+false
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="urn:uuid:96106979-4058-4af9-8c43-0822d8dd9ec2" class="uri">urn:uuid:96106979-4058-4af9-8c43-0822d8dd9ec2</a>
+</td>
+<td style="text-align:left;">
+<a href="urn:uuid:96106979-4058-4af9-8c43-0822d8dd9ec2" class="uri">urn:uuid:96106979-4058-4af9-8c43-0822d8dd9ec2</a>
+</td>
+<td style="text-align:left;">
+<a href="urn:uuid:96106979-4058-4af9-8c43-0822d8dd9ec2" class="uri">urn:uuid:96106979-4058-4af9-8c43-0822d8dd9ec2</a>
+</td>
+<td style="text-align:left;">
+raw_bathy2000_y0916-10.dat.gz
+</td>
+<td style="text-align:left;">
+application/x-gzip
+</td>
+<td style="text-align:left;">
+DATA
+</td>
+<td style="text-align:left;">
+40588955
+</td>
+<td style="text-align:left;">
+f438542d82702fdcf1247cd8f11a5bc0a9f3693133e66813b61f117db729cff2
+</td>
+<td style="text-align:left;">
+CN=Bryce Mecum A27576,O=Google,C=US,DC=cilogon,DC=org
+</td>
+<td style="text-align:left;">
+SHA256
+</td>
+<td style="text-align:left;">
+CN=arctic-data-admins,DC=dataone,DC=org
+</td>
+<td style="text-align:left;">
+TRUE
+</td>
+<td style="text-align:left;">
+3
+</td>
+<td style="text-align:left;">
+2014-11-03 19:23:05
+</td>
+<td style="text-align:left;">
+2014-11-03 19:23:05
+</td>
+<td style="text-align:left;">
+2016-10-22 10:14:43
+</td>
+<td style="text-align:left;">
+<a href="urn:node:ARCTIC" class="uri">urn:node:ARCTIC</a>
+</td>
+<td style="text-align:left;">
+<a href="urn:node:ARCTIC" class="uri">urn:node:ARCTIC</a>
+</td>
+<td style="text-align:left;">
+CN=Bryce Mecum A27576,O=Google,C=US,DC=cilogon,DC=org public CN=arctic-data-admins,DC=dataone,DC=org
+</td>
+<td style="text-align:left;">
+CN=Bryce Mecum A27576,O=Google,C=US,DC=cilogon,DC=org CN=arctic-data-admins,DC=dataone,DC=org
+</td>
+<td style="text-align:left;">
+CN=Bryce Mecum A27576,O=Google,C=US,DC=cilogon,DC=org CN=arctic-data-admins,DC=dataone,DC=org
+</td>
+<td style="text-align:left;">
+TRUE
+</td>
+<td style="text-align:left;">
+<a href="https://cn.dataone.org/cn/v2/resolve/urn%3Auuid%3A96106979-4058-4af9-8c43-0822d8dd9ec2">https://cn.dataone.org/cn/v2/resolve/urn%3Auuid%3A96106979-4058-4af9-8c43-0822d8dd9ec2</a>
+</td>
+<td style="text-align:left;">
+1
+</td>
+<td style="text-align:left;">
+FALSE
+</td>
+<td style="text-align:left;">
+false
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="urn:uuid:facf2476-bf77-47b0-9f28-286cd03a7ebb" class="uri">urn:uuid:facf2476-bf77-47b0-9f28-286cd03a7ebb</a>
+</td>
+<td style="text-align:left;">
+<a href="urn:uuid:facf2476-bf77-47b0-9f28-286cd03a7ebb" class="uri">urn:uuid:facf2476-bf77-47b0-9f28-286cd03a7ebb</a>
+</td>
+<td style="text-align:left;">
+<a href="urn:uuid:facf2476-bf77-47b0-9f28-286cd03a7ebb" class="uri">urn:uuid:facf2476-bf77-47b0-9f28-286cd03a7ebb</a>
+</td>
+<td style="text-align:left;">
+BeaufortAON2010-2011_08_2011_110810_070000_AU_BF10.wav
+</td>
+<td style="text-align:left;">
+application/octet-stream
+</td>
+<td style="text-align:left;">
+DATA
+</td>
+<td style="text-align:left;">
+29491244
+</td>
+<td style="text-align:left;">
+0ce97e595fdb3e25b3738e7ad6f53bdd67ea845de768e087c70648354b050809
+</td>
+<td style="text-align:left;">
+CN=Bryce Mecum A27576,O=Google,C=US,DC=cilogon,DC=org
+</td>
+<td style="text-align:left;">
+SHA256
+</td>
+<td style="text-align:left;">
+CN=arctic-data-admins,DC=dataone,DC=org
+</td>
+<td style="text-align:left;">
+TRUE
+</td>
+<td style="text-align:left;">
+3
+</td>
+<td style="text-align:left;">
+2014-11-03 19:03:02
+</td>
+<td style="text-align:left;">
+2014-11-03 19:03:02
+</td>
+<td style="text-align:left;">
+2016-10-22 09:12:27
+</td>
+<td style="text-align:left;">
+<a href="urn:node:ARCTIC" class="uri">urn:node:ARCTIC</a>
+</td>
+<td style="text-align:left;">
+<a href="urn:node:ARCTIC" class="uri">urn:node:ARCTIC</a>
+</td>
+<td style="text-align:left;">
+CN=Bryce Mecum A27576,O=Google,C=US,DC=cilogon,DC=org public CN=arctic-data-admins,DC=dataone,DC=org
+</td>
+<td style="text-align:left;">
+CN=Bryce Mecum A27576,O=Google,C=US,DC=cilogon,DC=org CN=arctic-data-admins,DC=dataone,DC=org
+</td>
+<td style="text-align:left;">
+CN=Bryce Mecum A27576,O=Google,C=US,DC=cilogon,DC=org CN=arctic-data-admins,DC=dataone,DC=org
+</td>
+<td style="text-align:left;">
+TRUE
+</td>
+<td style="text-align:left;">
+<a href="https://cn.dataone.org/cn/v2/resolve/urn%3Auuid%3Afacf2476-bf77-47b0-9f28-286cd03a7ebb">https://cn.dataone.org/cn/v2/resolve/urn%3Auuid%3Afacf2476-bf77-47b0-9f28-286cd03a7ebb</a>
+</td>
+<td style="text-align:left;">
+1
+</td>
+<td style="text-align:left;">
+FALSE
+</td>
+<td style="text-align:left;">
+false
+</td>
+<td style="text-align:left;">
+2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="urn:uuid:bca4355d-075a-46ad-9358-b67090eb7744" class="uri">urn:uuid:bca4355d-075a-46ad-9358-b67090eb7744</a>
+</td>
+<td style="text-align:left;">
+<a href="urn:uuid:bca4355d-075a-46ad-9358-b67090eb7744" class="uri">urn:uuid:bca4355d-075a-46ad-9358-b67090eb7744</a>
+</td>
+<td style="text-align:left;">
+<a href="urn:uuid:bca4355d-075a-46ad-9358-b67090eb7744" class="uri">urn:uuid:bca4355d-075a-46ad-9358-b67090eb7744</a>
+</td>
+<td style="text-align:left;">
+mcd43c_rgn_200502.nc
+</td>
+<td style="text-align:left;">
+netCDF-3
+</td>
+<td style="text-align:left;">
+DATA
+</td>
+<td style="text-align:left;">
+10008012
+</td>
+<td style="text-align:left;">
+7f885d575490025de0fd6470bb8a76d6c7b5d32d385b6b9f60534f0ea588640d
+</td>
+<td style="text-align:left;">
+CN=Bryce Mecum A27576,O=Google,C=US,DC=cilogon,DC=org
+</td>
+<td style="text-align:left;">
+SHA256
+</td>
+<td style="text-align:left;">
+CN=arctic-data-admins,DC=dataone,DC=org
+</td>
+<td style="text-align:left;">
+TRUE
+</td>
+<td style="text-align:left;">
+3
+</td>
+<td style="text-align:left;">
+2014-11-03 19:14:16
+</td>
+<td style="text-align:left;">
+2014-11-03 19:14:16
+</td>
+<td style="text-align:left;">
+2016-10-22 08:30:54
+</td>
+<td style="text-align:left;">
+<a href="urn:node:ARCTIC" class="uri">urn:node:ARCTIC</a>
+</td>
+<td style="text-align:left;">
+<a href="urn:node:ARCTIC" class="uri">urn:node:ARCTIC</a>
+</td>
+<td style="text-align:left;">
+CN=Bryce Mecum A27576,O=Google,C=US,DC=cilogon,DC=org public CN=arctic-data-admins,DC=dataone,DC=org
+</td>
+<td style="text-align:left;">
+CN=Bryce Mecum A27576,O=Google,C=US,DC=cilogon,DC=org CN=arctic-data-admins,DC=dataone,DC=org
+</td>
+<td style="text-align:left;">
+CN=Bryce Mecum A27576,O=Google,C=US,DC=cilogon,DC=org CN=arctic-data-admins,DC=dataone,DC=org
+</td>
+<td style="text-align:left;">
+TRUE
+</td>
+<td style="text-align:left;">
+<a href="https://cn.dataone.org/cn/v2/resolve/urn%3Auuid%3Abca4355d-075a-46ad-9358-b67090eb7744">https://cn.dataone.org/cn/v2/resolve/urn%3Auuid%3Abca4355d-075a-46ad-9358-b67090eb7744</a>
+</td>
+<td style="text-align:left;">
+1
+</td>
+<td style="text-align:left;">
+FALSE
+</td>
+<td style="text-align:left;">
+false
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="urn:uuid:9098f917-018f-484e-88d1-fda2dc56b5f8" class="uri">urn:uuid:9098f917-018f-484e-88d1-fda2dc56b5f8</a>
+</td>
+<td style="text-align:left;">
+<a href="urn:uuid:9098f917-018f-484e-88d1-fda2dc56b5f8" class="uri">urn:uuid:9098f917-018f-484e-88d1-fda2dc56b5f8</a>
+</td>
+<td style="text-align:left;">
+<a href="urn:uuid:9098f917-018f-484e-88d1-fda2dc56b5f8" class="uri">urn:uuid:9098f917-018f-484e-88d1-fda2dc56b5f8</a>
+</td>
+<td style="text-align:left;">
+BeaufortAON2010-2011_10_2010_101006_040000_AU_BF10.wav
+</td>
+<td style="text-align:left;">
+application/octet-stream
+</td>
+<td style="text-align:left;">
+DATA
+</td>
+<td style="text-align:left;">
+29491244
+</td>
+<td style="text-align:left;">
+8eb928cc35a2b3728327383b521099deb21b073003720037f2c2bb0bbcc910ca
+</td>
+<td style="text-align:left;">
+CN=Bryce Mecum A27576,O=Google,C=US,DC=cilogon,DC=org
+</td>
+<td style="text-align:left;">
+SHA256
+</td>
+<td style="text-align:left;">
+CN=arctic-data-admins,DC=dataone,DC=org
+</td>
+<td style="text-align:left;">
+TRUE
+</td>
+<td style="text-align:left;">
+3
+</td>
+<td style="text-align:left;">
+2014-11-03 19:03:02
+</td>
+<td style="text-align:left;">
+2014-11-03 19:03:02
+</td>
+<td style="text-align:left;">
+2016-10-22 08:58:01
+</td>
+<td style="text-align:left;">
+<a href="urn:node:ARCTIC" class="uri">urn:node:ARCTIC</a>
+</td>
+<td style="text-align:left;">
+<a href="urn:node:ARCTIC" class="uri">urn:node:ARCTIC</a>
+</td>
+<td style="text-align:left;">
+CN=Bryce Mecum A27576,O=Google,C=US,DC=cilogon,DC=org public CN=arctic-data-admins,DC=dataone,DC=org
+</td>
+<td style="text-align:left;">
+CN=Bryce Mecum A27576,O=Google,C=US,DC=cilogon,DC=org CN=arctic-data-admins,DC=dataone,DC=org
+</td>
+<td style="text-align:left;">
+CN=Bryce Mecum A27576,O=Google,C=US,DC=cilogon,DC=org CN=arctic-data-admins,DC=dataone,DC=org
+</td>
+<td style="text-align:left;">
+TRUE
+</td>
+<td style="text-align:left;">
+<a href="https://cn.dataone.org/cn/v2/resolve/urn%3Auuid%3A9098f917-018f-484e-88d1-fda2dc56b5f8">https://cn.dataone.org/cn/v2/resolve/urn%3Auuid%3A9098f917-018f-484e-88d1-fda2dc56b5f8</a>
+</td>
+<td style="text-align:left;">
+1
+</td>
+<td style="text-align:left;">
+FALSE
+</td>
+<td style="text-align:left;">
+false
+</td>
+<td style="text-align:left;">
+2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="urn:uuid:adc14cb0-bf37-4644-a192-38f51ffea58f" class="uri">urn:uuid:adc14cb0-bf37-4644-a192-38f51ffea58f</a>
+</td>
+<td style="text-align:left;">
+<a href="urn:uuid:adc14cb0-bf37-4644-a192-38f51ffea58f" class="uri">urn:uuid:adc14cb0-bf37-4644-a192-38f51ffea58f</a>
+</td>
+<td style="text-align:left;">
+<a href="urn:uuid:adc14cb0-bf37-4644-a192-38f51ffea58f" class="uri">urn:uuid:adc14cb0-bf37-4644-a192-38f51ffea58f</a>
+</td>
+<td style="text-align:left;">
+BeaufortAON2010-2011_07_2011_110723_020000_AU_BF10.wav
+</td>
+<td style="text-align:left;">
+application/octet-stream
+</td>
+<td style="text-align:left;">
+DATA
+</td>
+<td style="text-align:left;">
+29491244
+</td>
+<td style="text-align:left;">
+808ffc616e379d973e3cf0a7791a52caff36b23ce9fb52126af37c0ffecdd8b4
+</td>
+<td style="text-align:left;">
+CN=Bryce Mecum A27576,O=Google,C=US,DC=cilogon,DC=org
+</td>
+<td style="text-align:left;">
+SHA256
+</td>
+<td style="text-align:left;">
+CN=arctic-data-admins,DC=dataone,DC=org
+</td>
+<td style="text-align:left;">
+TRUE
+</td>
+<td style="text-align:left;">
+3
+</td>
+<td style="text-align:left;">
+2014-11-03 19:03:02
+</td>
+<td style="text-align:left;">
+2014-11-03 19:03:02
+</td>
+<td style="text-align:left;">
+2016-10-22 09:08:53
+</td>
+<td style="text-align:left;">
+<a href="urn:node:ARCTIC" class="uri">urn:node:ARCTIC</a>
+</td>
+<td style="text-align:left;">
+<a href="urn:node:ARCTIC" class="uri">urn:node:ARCTIC</a>
+</td>
+<td style="text-align:left;">
+CN=Bryce Mecum A27576,O=Google,C=US,DC=cilogon,DC=org public CN=arctic-data-admins,DC=dataone,DC=org
+</td>
+<td style="text-align:left;">
+CN=Bryce Mecum A27576,O=Google,C=US,DC=cilogon,DC=org CN=arctic-data-admins,DC=dataone,DC=org
+</td>
+<td style="text-align:left;">
+CN=Bryce Mecum A27576,O=Google,C=US,DC=cilogon,DC=org CN=arctic-data-admins,DC=dataone,DC=org
+</td>
+<td style="text-align:left;">
+TRUE
+</td>
+<td style="text-align:left;">
+<a href="https://cn.dataone.org/cn/v2/resolve/urn%3Auuid%3Aadc14cb0-bf37-4644-a192-38f51ffea58f">https://cn.dataone.org/cn/v2/resolve/urn%3Auuid%3Aadc14cb0-bf37-4644-a192-38f51ffea58f</a>
+</td>
+<td style="text-align:left;">
+1
+</td>
+<td style="text-align:left;">
+FALSE
+</td>
+<td style="text-align:left;">
+false
+</td>
+<td style="text-align:left;">
+2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="urn:uuid:8d2f0702-1545-47d2-98ea-157e8e2fe0ca" class="uri">urn:uuid:8d2f0702-1545-47d2-98ea-157e8e2fe0ca</a>
+</td>
+<td style="text-align:left;">
+<a href="urn:uuid:8d2f0702-1545-47d2-98ea-157e8e2fe0ca" class="uri">urn:uuid:8d2f0702-1545-47d2-98ea-157e8e2fe0ca</a>
+</td>
+<td style="text-align:left;">
+<a href="urn:uuid:8d2f0702-1545-47d2-98ea-157e8e2fe0ca" class="uri">urn:uuid:8d2f0702-1545-47d2-98ea-157e8e2fe0ca</a>
+</td>
+<td style="text-align:left;">
+BeaufortAON2010-2011_07_2011_110719_120000_AU_BF10.wav
+</td>
+<td style="text-align:left;">
+application/octet-stream
+</td>
+<td style="text-align:left;">
+DATA
+</td>
+<td style="text-align:left;">
+29491244
+</td>
+<td style="text-align:left;">
+ed3ae1e0f54a146197cef03ded7cc4dd148364688d9d5b584f1c10200c5e66b5
+</td>
+<td style="text-align:left;">
+CN=Bryce Mecum A27576,O=Google,C=US,DC=cilogon,DC=org
+</td>
+<td style="text-align:left;">
+SHA256
+</td>
+<td style="text-align:left;">
+CN=arctic-data-admins,DC=dataone,DC=org
+</td>
+<td style="text-align:left;">
+TRUE
+</td>
+<td style="text-align:left;">
+3
+</td>
+<td style="text-align:left;">
+2014-11-03 19:03:02
+</td>
+<td style="text-align:left;">
+2014-11-03 19:03:02
+</td>
+<td style="text-align:left;">
+2016-10-22 09:32:43
+</td>
+<td style="text-align:left;">
+<a href="urn:node:ARCTIC" class="uri">urn:node:ARCTIC</a>
+</td>
+<td style="text-align:left;">
+<a href="urn:node:ARCTIC" class="uri">urn:node:ARCTIC</a>
+</td>
+<td style="text-align:left;">
+CN=Bryce Mecum A27576,O=Google,C=US,DC=cilogon,DC=org public CN=arctic-data-admins,DC=dataone,DC=org
+</td>
+<td style="text-align:left;">
+CN=Bryce Mecum A27576,O=Google,C=US,DC=cilogon,DC=org CN=arctic-data-admins,DC=dataone,DC=org
+</td>
+<td style="text-align:left;">
+CN=Bryce Mecum A27576,O=Google,C=US,DC=cilogon,DC=org CN=arctic-data-admins,DC=dataone,DC=org
+</td>
+<td style="text-align:left;">
+TRUE
+</td>
+<td style="text-align:left;">
+<a href="https://cn.dataone.org/cn/v2/resolve/urn%3Auuid%3A8d2f0702-1545-47d2-98ea-157e8e2fe0ca">https://cn.dataone.org/cn/v2/resolve/urn%3Auuid%3A8d2f0702-1545-47d2-98ea-157e8e2fe0ca</a>
+</td>
+<td style="text-align:left;">
+1
+</td>
+<td style="text-align:left;">
+FALSE
+</td>
+<td style="text-align:left;">
+false
+</td>
+<td style="text-align:left;">
+3
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="urn:uuid:88ae9217-adfb-4b60-b0a4-7c93e4dc228b" class="uri">urn:uuid:88ae9217-adfb-4b60-b0a4-7c93e4dc228b</a>
+</td>
+<td style="text-align:left;">
+<a href="urn:uuid:88ae9217-adfb-4b60-b0a4-7c93e4dc228b" class="uri">urn:uuid:88ae9217-adfb-4b60-b0a4-7c93e4dc228b</a>
+</td>
+<td style="text-align:left;">
+<a href="urn:uuid:88ae9217-adfb-4b60-b0a4-7c93e4dc228b" class="uri">urn:uuid:88ae9217-adfb-4b60-b0a4-7c93e4dc228b</a>
+</td>
+<td style="text-align:left;">
+20080414_20080414.044550.f-15.rtd.000750.4880.bz2
+</td>
+<td style="text-align:left;">
+application/x-bzip2
+</td>
+<td style="text-align:left;">
+DATA
+</td>
+<td style="text-align:left;">
+26997781
+</td>
+<td style="text-align:left;">
+7dcf10f2882802e81c8d2e9994167a0d9ce19571d253ec7fbda8b55b340346ab
+</td>
+<td style="text-align:left;">
+CN=Bryce Mecum A27576,O=Google,C=US,DC=cilogon,DC=org
+</td>
+<td style="text-align:left;">
+SHA256
+</td>
+<td style="text-align:left;">
+CN=arctic-data-admins,DC=dataone,DC=org
+</td>
+<td style="text-align:left;">
+TRUE
+</td>
+<td style="text-align:left;">
+3
+</td>
+<td style="text-align:left;">
+2014-11-03 19:24:02
+</td>
+<td style="text-align:left;">
+2014-11-03 19:24:02
+</td>
+<td style="text-align:left;">
+2016-10-22 12:59:52
+</td>
+<td style="text-align:left;">
+<a href="urn:node:ARCTIC" class="uri">urn:node:ARCTIC</a>
+</td>
+<td style="text-align:left;">
+<a href="urn:node:ARCTIC" class="uri">urn:node:ARCTIC</a>
+</td>
+<td style="text-align:left;">
+CN=Bryce Mecum A27576,O=Google,C=US,DC=cilogon,DC=org public CN=arctic-data-admins,DC=dataone,DC=org
+</td>
+<td style="text-align:left;">
+CN=Bryce Mecum A27576,O=Google,C=US,DC=cilogon,DC=org CN=arctic-data-admins,DC=dataone,DC=org
+</td>
+<td style="text-align:left;">
+CN=Bryce Mecum A27576,O=Google,C=US,DC=cilogon,DC=org CN=arctic-data-admins,DC=dataone,DC=org
+</td>
+<td style="text-align:left;">
+TRUE
+</td>
+<td style="text-align:left;">
+<a href="https://cn.dataone.org/cn/v2/resolve/urn%3Auuid%3A88ae9217-adfb-4b60-b0a4-7c93e4dc228b">https://cn.dataone.org/cn/v2/resolve/urn%3Auuid%3A88ae9217-adfb-4b60-b0a4-7c93e4dc228b</a>
+</td>
+<td style="text-align:left;">
+1
+</td>
+<td style="text-align:left;">
+FALSE
+</td>
+<td style="text-align:left;">
+false
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="urn:uuid:77480a92-8c22-43a3-af68-63fe1da756d6" class="uri">urn:uuid:77480a92-8c22-43a3-af68-63fe1da756d6</a>
+</td>
+<td style="text-align:left;">
+<a href="urn:uuid:77480a92-8c22-43a3-af68-63fe1da756d6" class="uri">urn:uuid:77480a92-8c22-43a3-af68-63fe1da756d6</a>
+</td>
+<td style="text-align:left;">
+<a href="urn:uuid:77480a92-8c22-43a3-af68-63fe1da756d6" class="uri">urn:uuid:77480a92-8c22-43a3-af68-63fe1da756d6</a>
+</td>
+<td style="text-align:left;">
+BeaufortAON2010-2011_04_2011_110402_010000_AU_BF10.wav
+</td>
+<td style="text-align:left;">
+application/octet-stream
+</td>
+<td style="text-align:left;">
+DATA
+</td>
+<td style="text-align:left;">
+29491244
+</td>
+<td style="text-align:left;">
+45fc4832fac242e9bab67142d68adff9251ad59b9ea27c325aa4bac7d011b7e7
+</td>
+<td style="text-align:left;">
+CN=Bryce Mecum A27576,O=Google,C=US,DC=cilogon,DC=org
+</td>
+<td style="text-align:left;">
+SHA256
+</td>
+<td style="text-align:left;">
+CN=arctic-data-admins,DC=dataone,DC=org
+</td>
+<td style="text-align:left;">
+TRUE
+</td>
+<td style="text-align:left;">
+3
+</td>
+<td style="text-align:left;">
+2014-11-03 19:03:02
+</td>
+<td style="text-align:left;">
+2014-11-03 19:03:02
+</td>
+<td style="text-align:left;">
+2016-10-22 09:19:16
+</td>
+<td style="text-align:left;">
+<a href="urn:node:ARCTIC" class="uri">urn:node:ARCTIC</a>
+</td>
+<td style="text-align:left;">
+<a href="urn:node:ARCTIC" class="uri">urn:node:ARCTIC</a>
+</td>
+<td style="text-align:left;">
+CN=Bryce Mecum A27576,O=Google,C=US,DC=cilogon,DC=org public CN=arctic-data-admins,DC=dataone,DC=org
+</td>
+<td style="text-align:left;">
+CN=Bryce Mecum A27576,O=Google,C=US,DC=cilogon,DC=org CN=arctic-data-admins,DC=dataone,DC=org
+</td>
+<td style="text-align:left;">
+CN=Bryce Mecum A27576,O=Google,C=US,DC=cilogon,DC=org CN=arctic-data-admins,DC=dataone,DC=org
+</td>
+<td style="text-align:left;">
+TRUE
+</td>
+<td style="text-align:left;">
+<a href="https://cn.dataone.org/cn/v2/resolve/urn%3Auuid%3A77480a92-8c22-43a3-af68-63fe1da756d6">https://cn.dataone.org/cn/v2/resolve/urn%3Auuid%3A77480a92-8c22-43a3-af68-63fe1da756d6</a>
+</td>
+<td style="text-align:left;">
+1
+</td>
+<td style="text-align:left;">
+FALSE
+</td>
+<td style="text-align:left;">
+false
+</td>
+<td style="text-align:left;">
+2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="urn:uuid:dc5f060f-8a2b-446b-87f3-b320b9dbd2dc" class="uri">urn:uuid:dc5f060f-8a2b-446b-87f3-b320b9dbd2dc</a>
+</td>
+<td style="text-align:left;">
+<a href="urn:uuid:dc5f060f-8a2b-446b-87f3-b320b9dbd2dc" class="uri">urn:uuid:dc5f060f-8a2b-446b-87f3-b320b9dbd2dc</a>
+</td>
+<td style="text-align:left;">
+<a href="urn:uuid:dc5f060f-8a2b-446b-87f3-b320b9dbd2dc" class="uri">urn:uuid:dc5f060f-8a2b-446b-87f3-b320b9dbd2dc</a>
+</td>
+<td style="text-align:left;">
+BeaufortAON2010-2011_12_2010_101222_120000_AU_BF10.wav
+</td>
+<td style="text-align:left;">
+application/octet-stream
+</td>
+<td style="text-align:left;">
+DATA
+</td>
+<td style="text-align:left;">
+29491244
+</td>
+<td style="text-align:left;">
+8ea730a0e9f93f2e2a85e6a792ab19aabd5e2e2157a6837c21de0d903e76c5b4
+</td>
+<td style="text-align:left;">
+CN=Bryce Mecum A27576,O=Google,C=US,DC=cilogon,DC=org
+</td>
+<td style="text-align:left;">
+SHA256
+</td>
+<td style="text-align:left;">
+CN=arctic-data-admins,DC=dataone,DC=org
+</td>
+<td style="text-align:left;">
+TRUE
+</td>
+<td style="text-align:left;">
+3
+</td>
+<td style="text-align:left;">
+2014-11-03 19:03:02
+</td>
+<td style="text-align:left;">
+2014-11-03 19:03:02
+</td>
+<td style="text-align:left;">
+2016-10-22 09:33:11
+</td>
+<td style="text-align:left;">
+<a href="urn:node:ARCTIC" class="uri">urn:node:ARCTIC</a>
+</td>
+<td style="text-align:left;">
+<a href="urn:node:ARCTIC" class="uri">urn:node:ARCTIC</a>
+</td>
+<td style="text-align:left;">
+CN=Bryce Mecum A27576,O=Google,C=US,DC=cilogon,DC=org public CN=arctic-data-admins,DC=dataone,DC=org
+</td>
+<td style="text-align:left;">
+CN=Bryce Mecum A27576,O=Google,C=US,DC=cilogon,DC=org CN=arctic-data-admins,DC=dataone,DC=org
+</td>
+<td style="text-align:left;">
+CN=Bryce Mecum A27576,O=Google,C=US,DC=cilogon,DC=org CN=arctic-data-admins,DC=dataone,DC=org
+</td>
+<td style="text-align:left;">
+TRUE
+</td>
+<td style="text-align:left;">
+<a href="https://cn.dataone.org/cn/v2/resolve/urn%3Auuid%3Adc5f060f-8a2b-446b-87f3-b320b9dbd2dc">https://cn.dataone.org/cn/v2/resolve/urn%3Auuid%3Adc5f060f-8a2b-446b-87f3-b320b9dbd2dc</a>
+</td>
+<td style="text-align:left;">
+1
+</td>
+<td style="text-align:left;">
+FALSE
+</td>
+<td style="text-align:left;">
+false
+</td>
+<td style="text-align:left;">
+2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="urn:uuid:f59625d5-745b-41df-b886-804270b508f7" class="uri">urn:uuid:f59625d5-745b-41df-b886-804270b508f7</a>
+</td>
+<td style="text-align:left;">
+<a href="urn:uuid:f59625d5-745b-41df-b886-804270b508f7" class="uri">urn:uuid:f59625d5-745b-41df-b886-804270b508f7</a>
+</td>
+<td style="text-align:left;">
+<a href="urn:uuid:f59625d5-745b-41df-b886-804270b508f7" class="uri">urn:uuid:f59625d5-745b-41df-b886-804270b508f7</a>
+</td>
+<td style="text-align:left;">
+BeaufortAON2010-2011_02_2011_110211_200000_AU_BF10.wav
+</td>
+<td style="text-align:left;">
+application/octet-stream
+</td>
+<td style="text-align:left;">
+DATA
+</td>
+<td style="text-align:left;">
+29491244
+</td>
+<td style="text-align:left;">
+e50d64fd780204d6f08df50a6a268d628ac0cf5e2df7bfbbb68e09cd28737602
+</td>
+<td style="text-align:left;">
+CN=Bryce Mecum A27576,O=Google,C=US,DC=cilogon,DC=org
+</td>
+<td style="text-align:left;">
+SHA256
+</td>
+<td style="text-align:left;">
+CN=arctic-data-admins,DC=dataone,DC=org
+</td>
+<td style="text-align:left;">
+TRUE
+</td>
+<td style="text-align:left;">
+3
+</td>
+<td style="text-align:left;">
+2014-11-03 19:03:02
+</td>
+<td style="text-align:left;">
+2014-11-03 19:03:02
+</td>
+<td style="text-align:left;">
+2016-10-22 09:23:01
+</td>
+<td style="text-align:left;">
+<a href="urn:node:ARCTIC" class="uri">urn:node:ARCTIC</a>
+</td>
+<td style="text-align:left;">
+<a href="urn:node:ARCTIC" class="uri">urn:node:ARCTIC</a>
+</td>
+<td style="text-align:left;">
+CN=Bryce Mecum A27576,O=Google,C=US,DC=cilogon,DC=org public CN=arctic-data-admins,DC=dataone,DC=org
+</td>
+<td style="text-align:left;">
+CN=Bryce Mecum A27576,O=Google,C=US,DC=cilogon,DC=org CN=arctic-data-admins,DC=dataone,DC=org
+</td>
+<td style="text-align:left;">
+CN=Bryce Mecum A27576,O=Google,C=US,DC=cilogon,DC=org CN=arctic-data-admins,DC=dataone,DC=org
+</td>
+<td style="text-align:left;">
+TRUE
+</td>
+<td style="text-align:left;">
+<a href="https://cn.dataone.org/cn/v2/resolve/urn%3Auuid%3Af59625d5-745b-41df-b886-804270b508f7">https://cn.dataone.org/cn/v2/resolve/urn%3Auuid%3Af59625d5-745b-41df-b886-804270b508f7</a>
+</td>
+<td style="text-align:left;">
+1
+</td>
+<td style="text-align:left;">
+FALSE
+</td>
+<td style="text-align:left;">
+false
+</td>
+<td style="text-align:left;">
+2
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="query-a-wildcard-expression" class="section level3">
+<h3>Query a wildcard expression</h3>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co">#find any id that starts with arctic-data.6</span>
+result &lt;-<span class="st"> </span>dataone<span class="op">::</span><span class="kw">query</span>(mn, <span class="kw">list</span>(<span class="dt">q=</span><span class="st">&quot;id:arctic-data.6*&quot;</span>,
+                                  <span class="dt">rows=</span><span class="st">&quot;5000&quot;</span>),
+                         <span class="dt">as =</span> <span class="st">&quot;data.frame&quot;</span>)</code></pre>
+</div>
+<div id="query-multiple-fields" class="section level3">
+<h3>Query multiple fields</h3>
+<pre class="sourceCode r"><code class="sourceCode r">result &lt;-<span class="st"> </span>dataone<span class="op">::</span><span class="kw">query</span>(mn, <span class="kw">list</span>(<span class="dt">q=</span><span class="st">&quot;title:soil*+AND+origin:Ludwig&quot;</span>,
+                        <span class="dt">rows=</span><span class="st">&quot;5000&quot;</span>),
+                        <span class="dt">as =</span> <span class="st">&quot;data.frame&quot;</span>)</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r">result &lt;-<span class="st"> </span>dataone<span class="op">::</span><span class="kw">query</span>(mn, <span class="kw">list</span>(<span class="dt">q=</span><span class="st">&quot;title:soil* OR origin:Ludwig&quot;</span>,
+                                  <span class="dt">rows=</span><span class="st">&quot;5000&quot;</span>),
+                         <span class="dt">as =</span> <span class="st">&quot;data.frame&quot;</span>)</code></pre>
+<div class="note">
+<p>
+You can use either spaces or <code>+</code> to separate query parameters. When typing queries in R, it’s often easier to read if you use spaces. However, when using the browser, you may want to use <code>+</code> to keep the query clean. (The browser will replace spaces with <code>%20</code>.)
+</p>
+</div>
+</div>
+<div id="query-multiple-conditions-within-one-field" class="section level3">
+<h3>Query multiple conditions within one field</h3>
+<pre class="sourceCode r"><code class="sourceCode r">result &lt;-<span class="st"> </span>dataone<span class="op">::</span><span class="kw">query</span>(mn, <span class="kw">list</span>(<span class="dt">q=</span><span class="st">&quot;title:(soil* AND carbo*)&quot;</span>,
+                                  <span class="dt">rows=</span><span class="st">&quot;5000&quot;</span>),
+                         <span class="dt">as =</span> <span class="st">&quot;data.frame&quot;</span>) </code></pre>
+</div>
+<div id="use-not-in-a-query" class="section level3">
+<h3>Use NOT in a query</h3>
+<p>Just add <code>-</code> before a query parameter!</p>
+<pre class="sourceCode r"><code class="sourceCode r">result &lt;-<span class="st"> </span>dataone<span class="op">::</span><span class="kw">query</span>(mn, <span class="kw">list</span>(<span class="dt">q=</span><span class="st">&quot;title:(soil AND -carbon)&quot;</span>,
+                                  <span class="dt">rows=</span><span class="st">&quot;5000&quot;</span>),
+                         <span class="dt">as =</span> <span class="st">&quot;data.frame&quot;</span>)</code></pre>
+</div>
+<div id="query-a-coordinating-node" class="section level3">
+<h3>Query a coordinating node</h3>
+<pre class="sourceCode r"><code class="sourceCode r">result &lt;-<span class="st"> </span>dataone<span class="op">::</span><span class="kw">query</span>(cn, <span class="kw">list</span>(<span class="dt">q=</span><span class="st">&quot;title:soil* AND origin:Ludwig&quot;</span>,
+                                  <span class="dt">rows=</span><span class="st">&quot;5000&quot;</span>),
+                         <span class="dt">as =</span> <span class="st">&quot;data.frame&quot;</span>)</code></pre>
+</div>
+<div id="use-facets-1" class="section level3">
+<h3>Use facets</h3>
+<p>All resource maps with &gt; 100 data objects that are <em>not</em> on the Arctic Data Center:</p>
+<pre><code>https://cn.dataone.org/cn/v2/query/solr/?q=resourceMap:*+AND+-datasource:*ARCTIC*&amp;rows=0&amp;facet=true&amp;facet.field=resourceMap&amp;facet.mincount=100</code></pre>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="use-stats.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="more-resources.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "section"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
